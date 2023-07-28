@@ -12,7 +12,7 @@ const conn = require('./db/conn');
 const Thought = require('./models/Thought');
 const User = require('./models/User'); 
 
-app.engine('handlebars', exphbs());
+app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 
 // receber resposta do body
